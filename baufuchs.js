@@ -1,11 +1,14 @@
 $(function() {
-    $('#legal-basis-tab').on('click hover', () => {
-        alert("wtf");
-        $('#quality-labels-content').hide();
-        $('#health-protection-content').hide();
-        $('#legal-basis-content').show();
-        scrollToContent();
-    });
+    $(document).on('click', '.legal-basis-tab', () => {
+        alert("click");
+    } )
+    // $('#legal-basis-tab').on('click hover', () => {
+    //     alert("wtf");
+    //     $('#quality-labels-content').hide();
+    //     $('#health-protection-content').hide();
+    //     $('#legal-basis-content').show();
+    //     scrollToContent();
+    // });
 
 
     $('#quality-labels-tab').on('click hover', () => {
@@ -15,7 +18,7 @@ $(function() {
         scrollToContent();
     });
 
-    $('#health-protection-tab').on('click hover', () => {
+    $('.health-protection-tab').on('click hover', () => {
         $('#legal-basis-content').hide();
         $('#quality-labels-content').hide();
         $('#health-protection-content').show();
