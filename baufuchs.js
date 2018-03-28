@@ -1,5 +1,5 @@
 $(function() {
-    $('#legal-basis-tab').bind('click tap', () => {
+    $('#legal-basis-tab').bind('click touchstart', () => {
         $('#quality-labels-content').hide();
         $('#health-protection-content').hide();
         $('#legal-basis-content').show();
@@ -7,14 +7,14 @@ $(function() {
     });
 
 
-    $('#quality-labels-tab').bind('click tap', () => {
+    $('#quality-labels-tab').bind('click touchstart', () => {
         $('#legal-basis-content').hide();
         $('#health-protection-content').hide();
         $('#quality-labels-content').show();
         scrollToContent();
     });
 
-    $('#health-protection-tab').bind('click tap', () => {
+    $('#health-protection-tab').bind('click touchstart', () => {
         $('#legal-basis-content').hide();
         $('#quality-labels-content').hide();
         $('#health-protection-content').show();
