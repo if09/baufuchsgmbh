@@ -1,5 +1,6 @@
 $(function() {
     $('#legal-basis-tab').bind('click touchstart', () => {
+        alert("wtf");
         $('#quality-labels-content').hide();
         $('#health-protection-content').hide();
         $('#legal-basis-content').show();
