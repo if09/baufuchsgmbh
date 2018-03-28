@@ -39,3 +39,7 @@ a:hover .card {
 .tab-content > div {
     display: none;
 }
+
+.tab-controller {
+    cursor: pointer;
+}
