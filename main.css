@@ -1,4 +1,12 @@
-.card{margin-bottom: 10px; height: 410px;}
-.card-img-top{height:230px;}
-.jumbotron{height: 244px;}
+.card {
+    margin-bottom: 10px;
+    height: 410px;
+}
 
+.card-img-top {
+    height:230px;
+}
+
+.jumbotron {
+    height: 244px;
+}
