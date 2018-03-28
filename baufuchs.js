@@ -1,6 +1,6 @@
 $(function() {
-    $('.tab-controller').on('click', () => {
-        alert("xd");
+    $('.fakebutton').on('click', () => {
+        alert("fakebutton");
     });
     $('#legal-basis-tab').on('click', () => {
 

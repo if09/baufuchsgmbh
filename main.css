@@ -45,3 +45,13 @@ a:hover .card {
     cursor: pointer;
     display: block;
 }
+
+.fakebutton {
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.fakebutton:focus {
+    outline: none;
+}
