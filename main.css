@@ -9,4 +9,33 @@
 
 .jumbotron {
     height: 244px;
+
+}
+
+.wrapped-logos {
+    height:230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-aligned {
+    padding: 10px 0;
+}
+
+
+a , a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover .card {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.tab-content > div {
+    display: none;
 }
