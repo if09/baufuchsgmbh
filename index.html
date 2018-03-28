@@ -75,7 +75,7 @@
         <!-- top cards -->
         <div class="row" role="tablist">
             <div class="col-sm-4" role="tablist">
-                <button onclick="javascript:alert('wtfis')"class="legal-basis-tab fakebutton" id="legal-basis-tab">
+                <a onclick="javascript:showlegal()" class="tab-controller legal-basis-tab" id="legal-basis-tab">
                     <div class="card tab-controller" >
                         <img class="card-img-top" src="rules.jpg" title="Card image cap" />
                         <div class="card-body">
@@ -83,10 +83,10 @@
                             <p class="card-text"></p>
                         </div>
                     </div>
-                </button>
+                </a>
             </div>
             <div class="col-sm-4">
-                <a onclick="" class="tab-controller quality-labels-tabs" id="quality-labels-tab" >
+                <a onclick="javascript:showquality()" class="tab-controller quality-labels-tabs" id="quality-labels-tab" >
                     <div class="card">
                         <img class="card-img-top" src="He36HPu.png" title="Card image cap" />
                         <!-- <img class="card-img-top" src="attention.png" alt="Card image cap"> -->
@@ -99,7 +99,7 @@
                 </a>
             </div>
             <div class="col-sm-4">
-                <a onclick="" class="health-protection-tab tab-controller" id="health-protection-tab">
+                <a onclick="javascript:showhealth()" class="health-protection-tab tab-controller" id="health-protection-tab">
                     <div class="card">
                         <img class="card-img-top" src="richtig.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -184,7 +184,38 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="./baufuchs.js"></script>
+  <script>
+  const myfn = () => alert("myfn");
+
+  const showlegal = () => {
+      $('#quality-labels-content').hide();
+      $('#health-protection-content').hide();
+      $('#legal-basis-content').show();
+      scrollToContent();
+
+  }
+  const showquality = () => {
+      $('#legal-basis-content').hide();
+      $('#health-protection-content').hide();
+      $('#quality-labels-content').show();
+      scrollToContent();
+
+  }
+
+  const showhealth = () => {
+      $('#legal-basis-content').hide();
+      $('#quality-labels-content').hide();
+      $('#health-protection-content').show();
+      scrollToContent();
+  }
+
+  const scrollToContent = () => {
+      $('html, body').animate({
+          scrollTop: $(".tab-content").offset().top
+      }, 1000);
+  }
+  </script>
+  <!-- <script src="./baufuchs.js"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 

@@ -1,7 +1,5 @@
 $(function() {
-    $('.fakebutton').on('click', () => {
-        alert("fakebutton");
-    });
+
     $('#legal-basis-tab').on('click', () => {
 
         $('#quality-labels-content').hide();
@@ -23,7 +21,7 @@ $(function() {
         $('#quality-labels-content').hide();
         $('#health-protection-content').show();
         scrollToContent();
-    })
+    });
 
     const scrollToContent = () => {
         $('html, body').animate({
