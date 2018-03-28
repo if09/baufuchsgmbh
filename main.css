@@ -42,4 +42,5 @@ a:hover .card {
 
 .tab-controller {
     cursor: pointer;
+    display: block;
 }
